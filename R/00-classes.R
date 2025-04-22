@@ -9,6 +9,7 @@ setClass("AllModelClass",
                         Internals='list',
                         vcov='matrix',
                         time='numeric',
+                        Metadata='list',
                         'VIRTUAL'),
              validity = function(object) return(TRUE)
 )
@@ -30,6 +31,7 @@ setClass("AllModelClass",
 #'     \item{\code{OptimInfo}:}{a list of arguments from the optimization process}
 #'     \item{\code{Internals}:}{a list of internal arguments for secondary computations (inspecting this
 #'       object is generally not required)}
+#'     \item{\code{Metadata}:}{a list of computer and software data, useful for debugging mismatching analyses}
 #'     \item{\code{vcov}:}{a matrix represented the asymptotic covariance matrix of the parameter estimates}
 #'     \item{\code{time}:}{a data.frame indicating the breakdown of computation times in seconds}
 #' }
@@ -79,6 +81,7 @@ setClass(
 #'     \item{\code{OptimInfo}:}{a list of arguments from the optimization process}
 #'     \item{\code{Internals}:}{a list of internal arguments for secondary computations (inspecting this
 #'       object is generally not required)}
+#'     \item{\code{Metadata}:}{a list of computer and software data, useful for debugging mismatching analyses}
 #'     \item{\code{vcov}:}{a matrix represented the asymptotic covariance matrix of the parameter estimates}
 #'     \item{\code{time}:}{a data.frame indicating the breakdown of computation times in seconds}
 #' }
@@ -126,6 +129,7 @@ setClass(
 #'     \item{\code{OptimInfo}:}{a list of arguments from the optimization process}
 #'     \item{\code{Internals}:}{a list of internal arguments for secondary computations (inspecting this
 #'       object is generally not required)}
+#'     \item{\code{Metadata}:}{a list of computer and software data, useful for debugging mismatching analyses}
 #'     \item{\code{vcov}:}{a matrix represented the asymptotic covariance matrix of the parameter estimates}
 #'     \item{\code{time}:}{a data.frame indicating the breakdown of computation times in seconds}
 #' }
@@ -176,6 +180,7 @@ setClass(
 #'     \item{\code{OptimInfo}:}{a list of arguments from the optimization process}
 #'     \item{\code{Internals}:}{a list of internal arguments for secondary computations (inspecting this
 #'       object is generally not required)}
+#'     \item{\code{Metadata}:}{a list of computer and software data, useful for debugging mismatching analyses}
 #'     \item{\code{vcov}:}{a matrix represented the asymptotic covariance matrix of the parameter estimates}
 #'     \item{\code{time}:}{a data.frame indicating the breakdown of computation times in seconds}
 #' }
@@ -226,6 +231,7 @@ setClass(
 #'     \item{\code{OptimInfo}:}{a list of arguments from the optimization process}
 #'     \item{\code{Internals}:}{a list of internal arguments for secondary computations (inspecting this
 #'       object is generally not required)}
+#'     \item{\code{Metadata}:}{a list of computer and software data, useful for debugging mismatching analyses}
 #'     \item{\code{vcov}:}{a matrix represented the asymptotic covariance matrix of the parameter estimates}
 #'     \item{\code{time}:}{a data.frame indicating the breakdown of computation times in seconds}
 #' }
