@@ -1214,5 +1214,13 @@ ESTIMATION <- function(data, model, group, itemtype = NULL, guess = 0, upper = 1
                   ESTIMATE$time,
                   SE = as.numeric(time$end.time.SE - time$start.time.SE),
                   Post = as.numeric(time$end.time.post - time$start.time.post))
+    mod@Metadata <- list(
+      mirtVersion = packageVersion('mirt'),
+      rVersion = R.version,
+      machine = .Machine,
+      systemData = Sys.info(),
+      systemTime = Sys.time(),
+      model = model      
+    )
     return(mod)
 }
